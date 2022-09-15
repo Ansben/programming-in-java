@@ -1,0 +1,29 @@
+package agh.ii.prinjava.lab00.lst00_01;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class CalcTest {
+
+    @BeforeEach
+    void setUp(){
+        System.out.println("CalcTest.setUp...");
+    }
+
+    @AfterEach
+    void TearDown(){
+        System.out.print("CalcTest.TearDown");
+    }
+
+    @Test
+    void onePlusTwoIsThree(){
+        //if
+        int a = 1, b = 2;
+
+        //then
+        assertEquals(3, Calc.add(a,b));
+    }
+}
